@@ -1,1 +1,1 @@
-#Scrupts for AutoHotkey
+# Scripts for AutoHotkey
