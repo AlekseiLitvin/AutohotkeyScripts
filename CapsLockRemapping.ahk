@@ -42,12 +42,17 @@
 #Persistent
 SetCapsLockState, AlwaysOff
 
+; Minimize windows on mouse hover
 CapsLock & r::
   MouseGetPos,,, aID
   WinGet, Style, Style, ahk_id %aID%
   If ( Style & ( WS_MINIMIZEBOX := 0x20000) )
      WinMinimize, ahk_id %aID%
 Return
+
+; Volume control
+RControl & Up::Volume_Up
+RControl & Down::Volume_Down
 
 
 ; Capslock + jkli (left, down, up, right)
