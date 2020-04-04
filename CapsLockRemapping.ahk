@@ -55,8 +55,11 @@ RControl & Up::Volume_Up
 RControl & Down::Volume_Down
 
 ; Sleep mode
-Pause::DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
+RShift & Pause::
+	DllCall("PowrProf\SetSuspendState", "int", 0, "int", 0, "int", 0)
 
+
+CapsLock & p::SendInput {AppsKey}
 
 ; Capslock + jkli (left, down, up, right)
 
