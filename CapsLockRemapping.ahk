@@ -1,9 +1,4 @@
-﻿; Autohotkey Capslock Remapping Script 
-; Danik
-; More info at http://danikgames.com/blog/?p=714
-; danikgames.com
-; 
-; Functionality:
+﻿; Functionality:
 ; - Deactivates capslock for normal (accidental) use.
 ; - Hold Capslock and drag anywhere in a window to move it (not just the title bar).
 ; - Access the following functions when pressing Capslock: 
@@ -31,12 +26,6 @@
 ; - Does not need register remapping of AppsKey using SharpKeys.
 ; - Uses normal cursor key layout 
 ; - Added more hotkeys for insert, undo, redo etc.
-;
-; # Get the Linux Alt+Window Drag Functionality in Windows: http://www.howtogeek.com/howto/windows-vista/get-the-linux-altwindow-drag-functionality-in-windows/
-; Changes: The only change was using Capslock instead of Alt. This 
-; also removes problems in certain applications.
-
-
 
 
 #Persistent
@@ -102,9 +91,9 @@ Capslock & s up::SendInput {Ctrl Up}{x Up}
 Capslock & d::SendInput {Ctrl Down}{c Down}
 Capslock & d up::SendInput {Ctrl Up}{c Up}
 
-Capslock & f::SendInput {Ctrl Down}{v Down}
-Capslock & f up::SendInput {Ctrl Up}{v Up}
-
+; Open system tray
+Capslock & f::SendInput {LWinDown}{b}{LWinUp}{Enter}
+; Capslock & f up::SendInput {LWinDown}{b}{LWinUp}{Esc}
 
 ; Capslock + wer (close tab or window, press esc)
 
