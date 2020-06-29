@@ -92,7 +92,7 @@ Capslock & d::SendInput {Ctrl Down}{c Down}
 Capslock & d up::SendInput {Ctrl Up}{c Up}
 
 ; Open system tray
-Capslock & f::SendInput {LWinDown}{b}{LWinUp}{Enter}
+Capslock & f::SendInput {LWinDown}{b}{LWinUp}{Space}
 ; Capslock & f up::SendInput {LWinDown}{b}{LWinUp}{Esc}
 
 ; Capslock + wer (close tab or window, press esc)
