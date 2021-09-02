@@ -136,20 +136,6 @@ Capslock & . up::SendInput {Ctrl Up}{y Up}
 ; Make Capslock+Space -> Enter
 Capslock & Space::SendInput {Enter Down}
 
-
-; Numpad using Ctrl+Shift+Alt + m,.jkluio or space
-+^!Space:: SendInput {Numpad0}
-+^!m:: SendInput {Numpad1}
-+^!,:: SendInput {Numpad2}
-+^!.:: SendInput {Numpad3}
-+^!j:: SendInput {Numpad4}
-+^!k:: SendInput {Numpad5}
-+^!l:: SendInput {Numpad6}
-+^!u:: SendInput {Numpad7}
-+^!i:: SendInput {Numpad8}
-+^!o:: SendInput {Numpad9}
-
-
 ; Make Win Key + Capslock work like Capslock (in case it's ever needed)
 #Capslock::
 If GetKeyState("CapsLock", "T") = 1
